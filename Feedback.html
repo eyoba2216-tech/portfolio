@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Eyob Berhanu — reach out, leave a message, or connect.">
+  <title>Contact — Eyob Berhanu</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<nav id="navbar" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">EB</a>
+  <button class="nav-hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Favorite.html">Favorites</a></li>
+    <li><a href="Hobby.html">Hobbies</a></li>
+    <li><a href="Feedback.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="section-header reveal">
+    <p class="section-tag">Let's Connect</p>
+    <h1 class="section-title">Get In <span class="gradient-text">Touch</span></h1>
+    <div class="section-line"></div>
+    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 12px;">
+      Have something to say? I'd love to hear from you.
+    </p>
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="reveal delay-1">
+      <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px;">
+        Say Hello 👋
+      </h3>
+      <p style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.8; margin-bottom: 28px;">
+        Whether you have a question, want to collaborate, or just want to say hi — 
+        my inbox is always open. I'll do my best to respond!
+      </p>
+
+      <div class="contact-detail">
+        <span class="contact-detail-icon">🎓</span>
+        <div class="contact-detail-text">
+          <strong>University</strong>
+          St. Mary University, Addis Ababa
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <span class="contact-detail-icon">📚</span>
+        <div class="contact-detail-text">
+          <strong>Program</strong>
+          Computer Science — 3rd Year
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <span class="contact-detail-icon">📍</span>
+        <div class="contact-detail-text">
+          <strong>Location</strong>
+          Addis Ababa, Ethiopia
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <span class="contact-detail-icon">💡</span>
+        <div class="contact-detail-text">
+          <strong>Interests</strong>
+          Tech, Algorithms, Networking
+        </div>
+      </div>
+    </div>
+
+    <div class="glass-card reveal delay-2">
+      <form id="contactForm" action="https://formspree.io/f/xjybpgkd" method="POST">
+        <div class="form-group">
+          <label class="form-label" for="name">Your Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            class="form-input"
+            placeholder="e.g. Abebe Kebede"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email Address</label>
+          <input
+            id="email"
+             name="email"
+            type="email"
+            class="form-input"
+            placeholder="e.g. abebe@email.com"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea
+            id="message"
+             name="message"
+            class="form-textarea"
+            placeholder="Write your message here..."
+            rows="5"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+          ✉ Send Message
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="toast" class="toast">
+  ✅ Message received! Thank you for reaching out.
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

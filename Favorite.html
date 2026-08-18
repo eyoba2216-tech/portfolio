@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eyob Berhanu's favorites — food, movies, books, sport, artist, and music.">
+  <title>Favorites — Eyob Berhanu</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<nav id="navbar" aria-label="Main navigation">
+  <a href="index.html" class="nav-logo">EB</a>
+  <button class="nav-hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="Favorite.html" class="active">Favorites</a></li>
+    <li><a href="Hobby.html">Hobbies</a></li>
+    <li><a href="Feedback.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrapper">
+
+  <div class="section-header reveal">
+    <p class="section-tag">Things I Love</p>
+    <h1 class="section-title">My <span class="gradient-text">Favorites</span></h1>
+    <div class="section-line"></div>
+    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 12px;">
+      A glimpse into what makes me, me.
+    </p>
+  </div>
+
+  <div class="favorites-grid">
+
+    <div class="fav-card reveal delay-1">
+      <div class="fav-img-wrap">
+        <img src="image/food.jpg" alt="Pizza and Eggs">
+        <span class="fav-category">🍕 Food</span>
+      </div>
+      <div class="fav-body">
+        <h3>Pizza & Eggs</h3>
+        <p>Simple but always satisfying — my go-to meals.</p>
+      </div>
+    </div>
+
+    <div class="fav-card reveal delay-2">
+      <div class="fav-img-wrap">
+        <img src="image/movie.jpg" alt="Game of Thrones">
+        <span class="fav-category">🎬 Movie / Series</span>
+      </div>
+      <div class="fav-body">
+        <h3>Game of Thrones</h3>
+        <p>Epic storytelling, complex characters, unforgettable moments.</p>
+      </div>
+    </div>
+
+    <div class="fav-card reveal delay-3">
+      <div class="fav-img-wrap">
+        <img src="image/book.jpg" alt="Yehabesha Jebdu">
+        <span class="fav-category">📖 Book</span>
+      </div>
+      <div class="fav-body">
+        <h3>Yehabesha Jebdu</h3>
+        <p>A book that resonates with my culture and mindset.</p>
+      </div>
+    </div>
+
+    <div class="fav-card reveal delay-4">
+      <div class="fav-img-wrap">
+        <img src="image/boxing.jpg" alt="Boxing">
+        <span class="fav-category">🥊 Sport</span>
+      </div>
+      <div class="fav-body">
+        <h3>Boxing</h3>
+        <p>The discipline and strategy behind every fight inspires me.</p>
+      </div>
+    </div>
+
+    <div class="fav-card reveal delay-5">
+      <div class="fav-img-wrap">
+        <img src="image/artist.jpg" alt="Tewodros Tadesse">
+        <span class="fav-category">🎤 Artist</span>
+      </div>
+      <div class="fav-body">
+        <h3>Tewodros Tadesse</h3>
+        <p>My favorite Ethiopian artist — his music hits different.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="music-section reveal" style="margin-top: 40px;">
+    <div class="section-header" style="margin-bottom: 24px;">
+      <p class="section-tag">Now Playing</p>
+      <h2 class="section-title">Favorite <span class="gradient-text">Track</span></h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="music-player glass-card">
+      <div class="music-icon">🎵</div>
+      <div class="music-info">
+        <h3>Sew Mamen</h3>
+        <p>Tewodros Tadesse — My all-time favorite track</p>
+        <audio controls>
+          <source src="music/sewmamen.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

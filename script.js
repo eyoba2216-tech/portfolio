@@ -122,12 +122,11 @@ if (hamburger && navEl) {
     }
   });
 }
-// Share the portfolio URL on supported phones, with a clipboard fallback.
 const sharePortfolioBtn = document.getElementById('sharePortfolioBtn');
 const shareStatus = document.getElementById('shareStatus');
 
 if (sharePortfolioBtn) {
-  const portfolioUrl = 'https://eyoba2216-tech.github.io/personal-web/';
+  const portfolioUrl = 'https://eyoba2216-tech.github.io/portfolio/';
 
   sharePortfolioBtn.addEventListener('click', async () => {
     try {
@@ -149,7 +148,6 @@ if (sharePortfolioBtn) {
 
       window.prompt('Copy my portfolio link:', portfolioUrl);
     } catch (error) {
-      // Ignore the cancellation case from the native share sheet.
       if (error && error.name !== 'AbortError') {
         if (shareStatus) shareStatus.textContent = 'Sharing was not available on this device.';
       }
